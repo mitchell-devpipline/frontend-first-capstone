@@ -1,10 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@100;900&display=swap");
 html,
 body {
   max-width: 100%;
   max-height: 100%;
   margin: 0;
-
+  font-family: Roboto;
 }
 html .navigation-wrapper,
 body .navigation-wrapper {
@@ -42,15 +43,15 @@ body .navigation-wrapper .more-button {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid rgb(234, 30, 99);
   background-color: rgb(234, 30, 99);
   align-items: center;
-  padding: 4%;
   width: 20%;
-  border-radius: 50%;
+  border-radius: 30px;
+  padding: 4%;
 }
 html .navigation-wrapper .more-button a,
 body .navigation-wrapper .more-button a {
+  padding: 0;
   color: white;
   text-decoration: none;
 }
@@ -62,7 +63,7 @@ body .hero-container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(https://images.unsplash.com/photo-1554334836-2547fa719431?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2806&q=80);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1554334836-2547fa719431?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2806&q=80);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -71,9 +72,9 @@ body .hero-container {
 html .hero-container .hero-content,
 body .hero-container .hero-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 html .hero-container .hero-button,
 body .hero-container .hero-button {
@@ -82,11 +83,11 @@ body .hero-container .hero-button {
   border: 1px solid rgb(234, 30, 99);
   background-color: rgb(234, 30, 99);
   align-items: center;
-  padding: 10%;
+  padding: 7% 10% 7% 10%;
   margin-top: 10%;
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 10%;
+  border-radius: 5px;
 }
 html .hero-container .hero-button a,
 body .hero-container .hero-button a {
@@ -96,60 +97,153 @@ body .hero-container .hero-button a {
 html .main-content-wrapper,
 body .main-content-wrapper {
   display: flex;
-  border: 1px solid black;
   flex-direction: column;
+  align-items: center;
   max-width: 100%;
   max-height: 100%;
   padding: 5px, 5px, 5px, 5px;
-  align-items: center;
-  margin: 0 7% 0 7%;
+  margin: 0 2% 0 2%;
+  box-shadow: 0px 1px 20px gray;
+  border-radius: 10px;
+
 }
 html .main-content-wrapper .main-content,
 body .main-content-wrapper .main-content {
-  width: 100%;
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: 1px solid red;
   align-items: center;
-  padding: 5px, 5px, 5px, 5px;
 }
-html .main-content-wrapper .responsive-icon,
-html .main-content-wrapper .quality-icon,
-html .main-content-wrapper .support-icon,
-body .main-content-wrapper .responsive-icon,
-body .main-content-wrapper .quality-icon,
-body .main-content-wrapper .support-icon {
+html .main-content-wrapper .main-content .responsive-icon,
+html .main-content-wrapper .main-content .quality-icon,
+html .main-content-wrapper .main-content .support-icon,
+body .main-content-wrapper .main-content .responsive-icon,
+body .main-content-wrapper .main-content .quality-icon,
+body .main-content-wrapper .main-content .support-icon {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  text-align: center;
+  margin: 0 5% 0 5%;
+}
+html .main-content-wrapper .about-hestia,
+body .main-content-wrapper .about-hestia {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1844&q=80-67…fHx8fGVufDB8fHx8&auto=format&fit=crop&w=1844&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 0px 40px 0px;
+}
+html .main-content-wrapper .about-hestia .about-hestia-margin,
+body .main-content-wrapper .about-hestia .about-hestia-margin {
+  display: flex;
+  width: 40%;
+}
+html .main-content-wrapper .about-hestia img,
+body .main-content-wrapper .about-hestia img {
+  height: auto;
+  width: 40%;
 }
 html .main-content-wrapper .blog,
 body .main-content-wrapper .blog {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration: none;
 }
-html .main-content-wrapper .about-hestia,
-body .main-content-wrapper .about-hestia {
+html .main-content-wrapper .blog h2,
+body .main-content-wrapper .blog h2 {
+  font-family: roboto-slab;
+  font-size: 37px;
+}
+html .main-content-wrapper .blog .blog-posts,
+body .main-content-wrapper .blog .blog-posts {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+html .main-content-wrapper .blog .blog-posts .worth-a-thousand,
+html .main-content-wrapper .blog .blog-posts .elements,
+html .main-content-wrapper .blog .blog-posts .more-tags,
+body .main-content-wrapper .blog .blog-posts .worth-a-thousand,
+body .main-content-wrapper .blog .blog-posts .elements,
+body .main-content-wrapper .blog .blog-posts .more-tags {
   display: flex;
-  border: 1px solid black;
-  background-image: url(https://images.unsplash.com/photo-1477959858617-67…fHx8fGVufDB8fHx8&auto=format&fit=crop&w=1844&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  justify-items: center;
+  margin: 0 5% 0 5%;
+}
+html .main-content-wrapper .blog .blog-posts .worth-a-thousand .second-line-color,
+html .main-content-wrapper .blog .blog-posts .elements .second-line-color,
+html .main-content-wrapper .blog .blog-posts .more-tags .second-line-color,
+body .main-content-wrapper .blog .blog-posts .worth-a-thousand .second-line-color,
+body .main-content-wrapper .blog .blog-posts .elements .second-line-color,
+body .main-content-wrapper .blog .blog-posts .more-tags .second-line-color {
+  color: black;
+  font-size: 20px;
+  font-family: roboto-slab;
+}
+html .main-content-wrapper .blog .blog-posts .worth-a-thousand a,
+html .main-content-wrapper .blog .blog-posts .elements a,
+html .main-content-wrapper .blog .blog-posts .more-tags a,
+body .main-content-wrapper .blog .blog-posts .worth-a-thousand a,
+body .main-content-wrapper .blog .blog-posts .elements a,
+body .main-content-wrapper .blog .blog-posts .more-tags a {
+  text-decoration: none;
+}
+html .main-content-wrapper .blog .blog-posts p,
+body .main-content-wrapper .blog .blog-posts p {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 200;
+}
+html .main-content-wrapper .blog .blog-posts .uncategorized1,
+html .main-content-wrapper .blog .blog-posts .uncategorized2,
+html .main-content-wrapper .blog .blog-posts .uncategorized3,
+body .main-content-wrapper .blog .blog-posts .uncategorized1,
+body .main-content-wrapper .blog .blog-posts .uncategorized2,
+body .main-content-wrapper .blog .blog-posts .uncategorized3 {
+  font-size: 12px;
+}
+html .main-content-wrapper .blog .blog-posts .worth-a-thousand .uncategorized1,
+body .main-content-wrapper .blog .blog-posts .worth-a-thousand .uncategorized1 {
+  color: purple;
+}
+html .main-content-wrapper .blog .blog-posts .elements .uncategorized2,
+body .main-content-wrapper .blog .blog-posts .elements .uncategorized2 {
+  color: teal;
+}
+html .main-content-wrapper .blog .blog-posts .more-tags .uncategorized3,
+body .main-content-wrapper .blog .blog-posts .more-tags .uncategorized3 {
+  color: rgb(245, 67, 54);
 }
 html .main-content-wrapper .get-in-touch,
 body .main-content-wrapper .get-in-touch {
   display: flex;
-  flex-direction: column;
-  align-items: right;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1844&q=80-67…fHx8fGVufDB8fHx8&auto=format&fit=crop&w=1844&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  width: 100%;
+  height: auto;
 }
-html .footer,
-body .footer {
+html .main-content-wrapper .get-in-touch .get-in-touch-margin,
+body .main-content-wrapper .get-in-touch .get-in-touch-margin {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+html .main-content-wrapper .footer,
+body .main-content-wrapper .footer {
   display: grid;
   justify-content: space-between;
 }/*# sourceMappingURL=home.css.map */
