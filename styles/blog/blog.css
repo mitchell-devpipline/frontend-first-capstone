@@ -78,7 +78,11 @@ body {
   color: rgb(153, 153, 153);
 }
 .main-content-wrapper a {
+  color: black;
   text-decoration: none;
+}
+.main-content-wrapper h6 a {
+  color: red;
 }
 .main-content-wrapper .blog-items-wrapper {
   display: flex;
@@ -108,4 +112,10 @@ body {
 .footer a {
   text-decoration: none;
   color: white;
+}
+
+h6 a:nth-child(odd) {
+  color: orange;
+  color: blue;
+  color: red;
 }/*# sourceMappingURL=blog.css.map */
