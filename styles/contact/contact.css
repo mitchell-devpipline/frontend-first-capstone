@@ -55,6 +55,10 @@ body {
 .contact-info-map {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+.contact-info-map iframe {
+  width: 100%;
 }
 
 .contact-info-wrapper {
