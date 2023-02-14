@@ -4,85 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Blog Page</title>
 
     <script
       src="https://kit.fontawesome.com/40f4eba692.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto+Condensed:wght@300&display=swap"
-      rel="stylesheet"
-    />
+
+    <link rel="stylesheet" href="/styles/contact/contact.css" />
   </head>
   <body>
     <div class="navigation-wrapper">
-      <div class="link-wrapper">
-        <div class="nav-link">
-          <a href="/index.html">Hestia</a>
-        </div>
-
-        <div class="nav-link">
-          <a href="/index.html"><i class=""></i> HOME</a>
-        </div>
-
-        <div class="nav-link">
-          <a href="/pages/blog.html"><i class=""></i>BLOG</a>
-        </div>
-
-        <div class="nav-link">
-          <a href="/pages/contact.html"><i class=""></i> CONTACT</a>
-        </div>
+      <div class="nav-left">
+        <a href="/index.html">Hestia</a>
       </div>
 
-      <div class="search-icon-wrapper">
-        <div class="nav-link">
-          <a href="#"><i class=""></i>MORE</a>
+      <div class="nav-right">
+        <a href="/index.html"><i class=""></i> HOME</a>
+
+        <a href="/pages/blog.html"><i class=""></i>BLOG</a>
+
+        <a href="/pages/contact.html"><i class=""></i> CONTACT</a>
+        <div class="more-button">
+          <a href="#"><i class="more-button"></i>MORE</a>
         </div>
       </div>
     </div>
 
-      <div class="contact-info-map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.177710786189!2d26.092743200000005!3d44.4500271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff5499e689fd%3A0xec3a46eabd83835b!2sStrada%20Povernei%2020%2C%20Bucure%C8%99ti%2C%20Romania!5e0!3m2!1sen!2sus!4v1675979576490!5m2!1sen!2sus"
-          width="800"
-          height="600"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+    <div class="contact-info-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.177710786189!2d26.092743200000005!3d44.4500271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff5499e689fd%3A0xec3a46eabd83835b!2sStrada%20Povernei%2020%2C%20Bucure%C8%99ti%2C%20Romania!5e0!3m2!1sen!2sus!4v1675979576490!5m2!1sen!2sus"
+        width="1000"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div class="contact-info-wrapper">
       <div class="contact-left">
         <h1>Send us a message</h1>
         <input type="text" />
         <input type="text" />
         <input type="text" />
-        <a href="">Submit</a>
+        <div class="submit-button">
+          <a href="">Submit</a>
+        </div>
       </div>
       <div class="contact-right">
         <a href=""><i class="fa-solid fa-map"></i></a> Find us at the office<br />
-        <div>Strada Povernei, nr 20 Bucharest Romania</div>
+        <p>Strada Povernei, nr 20 Bucharest Romania</p>
 
         <a href=""><i class="fa-solid fa-phone-flip"></i></a> Give us a ring<br />
-        <div>John Doe +40 712 345 678 Mon – Fri, 8:00-22:00</div>
-
+        <p>John Doe +40 712 345 678 Mon – Fri, 8:00-22:00</p>
         <a href=""><i class="fa-solid fa-briefcase"></i></a> Legal
         information<br />
-        <div>John Doe Co. Fiscal Code: 12345678</div>
+        <p>John Doe Co. Fiscal Code: 12345678</p>
       </div>
-
-      <div class="footer">
-        <div>
-          <a href="">About</a>
-          <a href="/pages/parent-page.html">Parent Page</a>
-
-          <div class="left-footer">
-            Hestia | Developed by <a href="">Themelsle</a>
-          </div>
-        </div>
+    </div>
+    <div class="footer">
+      <div class="left-footer">
+        <a href="/pages/parent-page.html">Parent Page</a>
+      </div>
+      <div class="right-footer">
+        Hestia | Developed by <a href=""> Themelsle</a>
       </div>
     </div>
   </body>
