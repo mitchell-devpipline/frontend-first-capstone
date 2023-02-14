@@ -62,7 +62,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   height: auto;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   padding-left: 15%;
 }
 .contact-info-wrapper i {
@@ -116,4 +116,124 @@ body {
 .footer a {
   text-decoration: none;
   color: white;
+}
+
+@media screen and (max-width: 375px) {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@100;900&display=swap");
+  html,
+  body {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    font-family: Roboto;
+  }
+  .navigation-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .navigation-wrapper a {
+    color: black;
+    text-decoration: none;
+  }
+  .navigation-wrapper .nav-left {
+    display: flex;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .navigation-wrapper .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 20px;
+  }
+  .navigation-wrapper .more-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(234, 30, 99);
+    align-items: center;
+    width: 20%;
+    border-radius: 30px;
+    padding: 4%;
+  }
+  .navigation-wrapper .more-button a {
+    padding: 0;
+    color: white;
+    text-decoration: none;
+  }
+  .contact-info-map {
+    display: flex;
+    justify-content: center;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .contact-info-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    align-items: center;
+    max-width: 100%;
+    padding-left: 5%;
+  }
+  .contact-info-wrapper i {
+    color: rgb(234, 30, 99);
+    font-size: 30px;
+  }
+  .contact-info-wrapper .contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 80%;
+  }
+  .contact-info-wrapper .contact-left .submit-button a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(234, 30, 99);
+    align-items: center;
+    width: 60px;
+    border-radius: 5px;
+    padding: 2%;
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+  }
+  .contact-info-wrapper .contact-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    color: rgb(158, 158, 158);
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(50, 52, 55);
+    width: 100%;
+    color: white;
+    padding: 30px 0;
+  }
+  .footer .left-footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  .footer .right-footer {
+    display: flex;
+    align-items: flex-end;
+  }
+  .footer a {
+    text-decoration: none;
+    color: white;
+  }
 }/*# sourceMappingURL=contact.css.map */
