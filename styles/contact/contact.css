@@ -75,6 +75,10 @@ body {
   justify-content: left;
   width: 80%;
 }
+.contact-info-wrapper .contact-left input {
+  border: 1px solid rgb(181, 172, 172);
+  border-radius: 5px;
+}
 .contact-info-wrapper .contact-left .submit-button a {
   display: flex;
   align-items: center;
@@ -194,6 +198,11 @@ body {
     flex-direction: column;
     justify-content: left;
     width: 80%;
+    justify-content: space-around;
+  }
+  .contact-info-wrapper .contact-left input {
+    border: 1px solid rgb(181, 172, 172);
+    border-radius: 5px;
   }
   .contact-info-wrapper .contact-left .submit-button a {
     display: flex;

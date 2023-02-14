@@ -80,6 +80,11 @@ body {
     justify-content: left;
     width: 80%;
 
+    input {
+      border: 1px solid rgb(181, 172, 172);
+      border-radius: 5px;
+    }
+
     .submit-button {
       a {
         display: flex;
@@ -212,6 +217,12 @@ body {
       flex-direction: column;
       justify-content: left;
       width: 80%;
+      justify-content: space-around;
+
+      input {
+        border: 1px solid rgb(181, 172, 172);
+        border-radius: 5px;
+      }
 
       .submit-button {
         a {
